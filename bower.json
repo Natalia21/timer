@@ -1,0 +1,10 @@
+{
+  "name": "AngularTutorial",
+  "dependencies": {
+    "angular": "*",
+    "qunit": "*",
+    "bootstrap": "*",
+    "jquery-svg": "*",
+    "font-awesome": "~4.7.0"
+  }
+}

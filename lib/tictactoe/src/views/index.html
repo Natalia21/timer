@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer</title>
+        <script src="js/angular.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.svg.min.js"></script>
+        <script src="js/tictactoe.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/tictactoe.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.svg.css"/>
+    </head>
+
+    <body ng-app="TicTacToe" ng-controller="TimerController">
+        <div class="main-container">
+            <div class="timer-container">
+                <div class="timer-body">
+                    {{clockTime}}
+                </div>
+                <div class="timer-controls">
+                    <div class="start" ng-click="toogleTimer()">
+                        <span ng-if="!isTimerRunning"> Play </span>
+                        <span ng-if="isTimerRunning"> Pause </span>
+                    </div>
+                    <div class="screenshot" ng-click="takeTimerSnapshot()">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="remove" ng-click="stopTimer()">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="item" ng-repeat="time in snapshots">
+                    <span>{{time}}</span>
+                    <button ng-click="removeSnapshot($index)">REMOVE</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

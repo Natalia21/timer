@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'clock-font';
+  src: url("../fonts/digital-7.ttf"); }
+body {
+  height: 100vh; }
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-color: #3c3c3c; }
+
+.timer-container {
+  width: 350px;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+  .timer-container .timer-body {
+    font-family: 'clock-font';
+    height: 100px;
+    text-align: center;
+    color: #5e8b37;
+    background-color: #262328;
+    font-size: 42px;
+    line-height: 79px;
+    border-radius: 8px 8px 0 0; }
+  .timer-container .timer-controls {
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    background-color: #ebebeb;
+    cursor: pointer; }
+    .timer-container .timer-controls .start {
+      width: 60%;
+      border-right: 1px solid gray;
+      height: 100%;
+      text-align: center;
+      line-height: 57px;
+      font-size: 22px; }
+    .timer-container .timer-controls .screenshot {
+      width: 20%;
+      border-right: 1px solid gray;
+      height: 100%;
+      position: relative; }
+      .timer-container .timer-controls .screenshot i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 24px;
+        margin-left: -10px;
+        margin-top: -12px; }
+    .timer-container .timer-controls .remove {
+      width: 20%;
+      height: 100%;
+      position: relative; }
+      .timer-container .timer-controls .remove i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 24px;
+        margin-left: -9px;
+        margin-top: -12px; }
+
+.list {
+  width: 350px;
+  margin: 0 auto; }
+  .list .item {
+    height: 30px;
+    color: #ebebeb;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #474747;
+    box-sizing: content-box; }
+    .list .item span {
+      font-family: 'clock-font';
+      font-size: 20px;
+      line-height: 19px; }
+    .list .item button {
+      background-color: #f00;
+      border: 0;
+      border-radius: 2px;
+      font-size: 12px;
+      padding: 4px;
+      float: right; }
+
+/*# sourceMappingURL=tictactoe.css.map */
