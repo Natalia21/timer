@@ -1,9 +1,6 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        qunit: {
-            all: ['lib/tictactoe/test/*.html']
-        },
         cssmin: {
             target: {
                 files: {
