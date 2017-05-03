@@ -1,1 +1,0 @@
-sass --watch tictactoe.scss:../../../css/tictactoe.css
